@@ -49,6 +49,7 @@ input[type=date] {
     padding-left: 10px;
     padding-right: 10px;
     color: #b1bfcd;
+    cursor: pointer;
 }
 
 input[type=date]::-webkit-inner-spin-button {
@@ -192,6 +193,7 @@ span {
     -moz-transition: 0.25s ease-in-out;
     -ms-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
+    cursor: pointer;
 }
 
 .toggle-button img:hover {
@@ -277,6 +279,7 @@ span {
     margin-right: 10px;
     background-color: #f5f8f9;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .male-icon:hover,
@@ -415,6 +418,11 @@ span {
     margin-right: 20px;
 }
 
+.cancel-button button,
+.save-button button {
+    cursor: pointer;
+}
+
 .cancel-button button {
     width: 158.7px;
     height: 53px;
@@ -490,6 +498,22 @@ span {
     .right-container {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+    }
+
+    .cancel-button,
+    .save-button {
+        display: block;
+        width: 100%;
+    }
+
+    .cancel-button button,
+    .save-button button {
+        width: 100%;
+    }
+
+    .cancel-button {
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
 
